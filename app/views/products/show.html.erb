@@ -1,0 +1,19 @@
+ <div id="<%= dom_id @product %>">
+ 	<p>
+    <strong>Producto:</strong>
+    <%= @product.title %>
+  </p>
+  <p>
+     <%= @product.description %>
+  </p>
+
+  <div>
+  	<%= link_to "Editar producto", edit_product_path(@product) %>
+
+  	<%= button_to "Eliminar producto", @product, method: :delete %>
+  	
+  	<%= link_to "Regresar a los productos", products_path %>
+  </div>
+
+
+ </div>
