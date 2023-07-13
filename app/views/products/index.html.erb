@@ -3,14 +3,6 @@
 <%= link_to "Nuevo producto", new_product_path %>
 
 <div id="productos">
-	<% @products.each do |product| %>
-
-		<%= link_to product_path(product.id) do %>
-			<h2><%= product.title %></h2>
-		<% end %>
-
-		<p><%= product.description %></p>
-		<span><%= product.price %></span>
-	<% end %>
+	<%= render partial: 'product', collection: @products %>
 </div>
 

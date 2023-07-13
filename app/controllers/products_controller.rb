@@ -2,7 +2,7 @@ class ProductsController < ApplicationController
   before_action :set_product, only: %i[ show edit update destroy ]
   
   def index
-    @products = Product.all
+    @products = Product.all.with_attached_photo
   end
 
   def show
@@ -53,6 +53,6 @@ class ProductsController < ApplicationController
     end
 
     def product_params
-      params.require(:product).permit(:title, :price, :description)
+      params.require(:product).permit(:title, :price, :description, :photo)
     end
 end

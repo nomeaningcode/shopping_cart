@@ -1,4 +1,6 @@
  <div id="<%= dom_id @product %>">
+
+   <%= image_tag @product.photo, width: 200 if @product.photo.attached? %>
  	<p>
     <strong>Producto:</strong>
     <%= @product.title %>
