@@ -51,6 +51,11 @@ en:
               blank: 'field cant be blank'
   common:
     confirm: '¿Are you sure?'
+    back: 'Go back'
+  shared:
+    header: 
+      add: 'Add product'
+      categories: 'Categories'
   products:
     index: 
       title: 'Products:'
@@ -64,3 +69,18 @@ en:
       updated: 'Product was sucesfully updated'
     destroy:
       destroyed: 'Product was sucesfully deleted'
+  categories:
+    category:
+      edit: 'edit category'
+      delete: 'delete category'
+    index:
+      title: 'Categories'
+      new: 'Add category'
+    edit:
+      title: 'Edit category'
+    create:
+      created: 'Category was sucesfully created'
+    update: 
+      updated: 'Category was sucesfully updated'
+    destroy:
+      destroyed: 'Category was sucesfully deleted'

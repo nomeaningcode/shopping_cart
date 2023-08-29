@@ -1,7 +1,5 @@
 <h1><%= t('.title') %></h1>
 
-<%= link_to "Nuevo producto", new_product_path %>
-
 <div id="productos">
 	<%= render partial: 'product', collection: @products %>
 </div>
